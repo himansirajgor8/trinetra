@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+# trained models are rebuilt automatically on first run (scikit-learn files are not portable between versions)
+models/*.joblib
+models/*.json
+models/sklearn_version.txt
+# local, private runtime data
+data/*.db
+data/feedback.tsv
+data/devices.json
+# Llama weights and tokenizer are licensed by Meta - download them yourself, never commit them
+*.pte
+*.pth
+tokenizer.model
+# secrets
+.env
+*token*

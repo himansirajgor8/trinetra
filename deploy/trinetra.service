@@ -1,0 +1,15 @@
+# Auto-start Trinetra on a Raspberry Pi / Arm Linux box.
+#   1) edit User and the two paths below   2) sudo cp deploy/trinetra.service /etc/systemd/system/
+#   3) sudo systemctl enable --now trinetra     (logs: journalctl -u trinetra -f)
+[Unit]
+Description=Trinetra on-device AI security assistant
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/trinetra
+ExecStart=/home/pi/trinetra/run.sh --port 8080
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

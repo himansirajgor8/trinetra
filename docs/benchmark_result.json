@@ -1,0 +1,43 @@
+{
+  "device": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "model_kb": {
+    "sms.joblib": 305.1,
+    "phishing.joblib": 19.1,
+    "network.joblib": 214.5
+  },
+  "url": {
+    "p50_ms": 3.4,
+    "p95_ms": 5.19,
+    "per_sec": 273.8
+  },
+  "sms": {
+    "p50_ms": 2.83,
+    "p95_ms": 4.32,
+    "per_sec": 327.0
+  },
+  "flow": {
+    "p50_ms": 5.14,
+    "p95_ms": 8.32,
+    "per_sec": 183.2
+  },
+  "end_to_end_sms_with_advice": {
+    "p50_ms": 3.26,
+    "p95_ms": 6.99,
+    "per_sec": 225.6
+  },
+  "peak_rss_mb": 161.3,
+  "advisor_mode": "template",
+  "soak": {
+    "inferences": 600,
+    "p50_first10pct_ms": 2.84,
+    "p50_last10pct_ms": 3.1,
+    "peak_rss_start_mb": 161.3,
+    "peak_rss_end_mb": 161.3,
+    "cpu_seconds": 1.75,
+    "wall_seconds": 1.76,
+    "temp_start_c": null,
+    "temp_end_c": null
+  }
+}
